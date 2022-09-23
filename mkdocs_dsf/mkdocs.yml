@@ -1,22 +1,115 @@
 site_name: Artin Majdi
 site_url: http://artinmajdi.github.io/DSF-2022
+repo_utl: https://github.com/artinmajdi/DSF-2022
+
 
 nav:
   - Home: index.md
-  - About: about.md
-  # - Research: research.md
-  # - Publications: publications.md
-  # - Teaching: teaching.md
-  # - Contact: contact.md
+  - About Me: about.md
+  - Research: research.md
+  - Publications: publications.md
 
 theme:
   name: material
+
+# setting features for the navigation tab
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+
   palette:
-    primary: blue
-    accent: blue
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: agic
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
   font:
     text: PT Sans Narrow
     code: Arial
+
   icon:
-    repo: github
-    logo: material/rocket
+    repo: https://github.com/artinmajdi/DSF-2022
+    # https://fontawesome.com/icons/markdown?s=solid&f=brands
+    logo: fontawesome/brands/the-red-yeti
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+# Plugins
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
+
+
+# Help:
+# !!! <option> "title"
+#       Body text
+# Options: Note, Abstract, info, tip, success, question, warning, faliure, danger, bug , quote, example
+# mkdocs serve  : to see the website locally
+# mkdocs build : to build the website
+# mkdocs gh-deploy : to deploy the website to github pages
