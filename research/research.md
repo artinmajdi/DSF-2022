@@ -9,10 +9,10 @@
     - Additionally, to improve generalization ability, I'm developing ML methods that account for model and data uncertainty.
 
     !!! Note "Finding New Applications of ML in Real-Life Settings:"
-    Through my numerous collaborations with experts from various departments at the University of Arizona, ranging from engineering to medicine and agriculture.
+    - Through my numerous collaborations with experts from various departments at the University of Arizona, ranging from engineering to medicine and agriculture.
 
     !!! Note "Software Design"
-    Years of working with a diverse group of experts, most notably through my advisory role at the University of Arizona's Data Science Institute, have given me a thorough grasp of the whole machine learning research and product management, from data management and development to deployment. This includes, but is not limited to, various aspects of ML product scaling such as life cycle management, containerization, and scaling (Kubernetes, etc.).
+    - Years of working with a diverse group of experts, most notably through my advisory role at the University of Arizona's Data Science Institute, have given me a thorough grasp of the whole machine learning research and product management, from data management and development to deployment. This includes, but is not limited to, various aspects of ML product scaling such as life cycle management, containerization, and scaling (Kubernetes, etc.).
 
     !!! Note "Healthcare & Social Entrepreneur"
     - My eagerness to fully understand the entire ML industry cycle persuaded me to broaden my expertise beyond ML development.
