@@ -1,0 +1,22 @@
+site_name: Artin Majdi
+site_url: http://artinmajdi.github.io/DSF-2022
+
+nav:
+  - Home: index.md
+  - About: about.md
+  # - Research: research.md
+  # - Publications: publications.md
+  # - Teaching: teaching.md
+  # - Contact: contact.md
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  font:
+    text: PT Sans Narrow
+    code: Arial
+  icon:
+    repo: github
+    logo: material/rocket
